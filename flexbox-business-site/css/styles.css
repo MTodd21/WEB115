@@ -1,0 +1,314 @@
+/***** Meyer Reset *****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/***** Variable Styling *****/
+:root{
+    --font-family: 'Lato', sans-serif;
+    --text-color: black;
+    --primary-color: lightgrey;
+    --secondary-color: rgb(167, 30, 40);
+    --break-color: darkgrey;
+}
+
+/***** Main Styling *****/
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+footer{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--break-color);
+    flex-shrink: 0;
+}
+
+/***** Nav Styling *****/
+.nav-container{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    font-size: 2em;
+}
+
+.logo{
+    font-size: 2em;
+    text-shadow: 2px 1px var(--primary-color);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+nav li{
+    padding: .3em;
+    display: inline-block;
+    padding: 0px 1.2em;
+    border-right: var(--text-color) 1px solid;
+}
+
+nav li:last-child{
+    border-right: none;
+}
+
+nav li a:hover{
+    color: var(--break-color);
+}
+
+.button{
+    padding: 16px 20px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+}
+
+/***** Hero Section Styling *****/
+.hero{
+    background: fixed url(../images/pizza-oven.jpg);
+    /***** Photo Credit: Louis Hansel, https://unsplash.com/photos/G5cpmu-0OV8 *****/
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+}
+
+.hero h1{
+    font-size: 5em;
+    padding: 1em;
+    color: var(--secondary-color);
+    text-shadow: 2px 1px var(--primary-color);
+    box-shadow: inset 0px 150px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+.hero a{
+    margin: 8%;
+    font-size: 5em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.hero-button{
+    font-size: 2em;
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.hero-button:hover{
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/***** Multi-column Section Styling *****/
+.products{
+    display: flex;
+    justify-content: center;
+    font-size: 3.2em;
+    padding-left: 3em;
+    padding-right: 3em
+}
+
+.card{
+    flex-basis: calc(33.33% - 1em);
+    margin: .5em;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-color);
+    padding: .4em;
+    font-size: 1em;
+}
+
+.card h1{
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 2px 1px var(--primary-color);
+    font-size: 1.5em;
+    margin: 0 0 .75em;
+    padding: .6em;
+    border-bottom: 2px solid var(--text-color);
+}
+  
+.card img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid var(--text-color);
+    margin: auto;
+}
+
+.card ul li{
+    display: flex;
+    font-size: .6em;
+    margin-top: .3em;
+    padding: .2em;
+    justify-content: center;
+}
+
+/***** Testimonial Section Styling *****/
+.testimonial{
+    background: var(--text-color);
+    color: var(--secondary-color);
+    padding: 2em 0;
+}
+
+.testimonial-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial img{
+    width: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    margin: 2em;
+}
+
+.testimonial q{
+    font-size: 2.6em;
+    line-height: 1.4em;
+    display: block;
+}
+
+.testimonial cite{
+    font-size: 2em;
+    display: block;
+    line-height: 2em;
+}
+
+/***** Business Information Section Styling *****/
+.business-information{
+    padding: 1em;
+    font-size: 2em;
+    line-height: 2;
+    text-align: center;
+}
+
+/***** Order Page Styling *****/
+.main-container{
+    line-height: 1.5;
+    font-size: 1.6em;
+    padding: 3em;
+    display: flex;
+    flex-grow: 1;
+}
+
+.main-container main{
+    flex-basis: 66.66%;
+    margin-right: 8em;
+    margin-left: 2em;
+}
+
+.main-container h1{
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.main-container h2{
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.main-container aside{
+    flex-basis: 33.33%;
+    margin-right: -3em;
+
+}
+
+.main-container ul{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.main-container li{
+    padding: 1em;
+    display: inline-block;
+}
+
+.main-button{
+    text-decoration: none;
+    padding: 14px 16px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.main-button:hover{
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+}
+
+aside ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside li{
+    display: block;
+}
+
+aside a{
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+aside a:hover{
+    background: transparent;
+}
