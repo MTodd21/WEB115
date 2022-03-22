@@ -1,0 +1,451 @@
+/***** Meyer Reset *****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/***** Variables *****/ 
+:root{
+    --font-family: 'Roboto', sans-serif;;
+    --primary-text-color: #261E1E;
+    --secondary-text-color: #F2778D;
+    --primary-color: #733838;
+    --secondary-color: #D94E4E;
+    --break-color: #D94E5A;
+}
+
+
+/***** Main Styling *****/
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    min-width: 900px;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+header{
+    font-size: 2em;
+}  
+
+main{
+    flex: 1 0 auto;
+}
+
+p{
+    font-size: 1em;
+}
+
+footer{
+    font-size: 1.2em;
+    text-align: center;
+    padding: .2em;
+    background-color: var(--primary-color);
+    color: var(--break-color);
+    flex-shrink: 0;
+}
+
+/***** Nav Styling *****/
+.nav-container{
+    background-color: var(--secondary-color);
+}
+
+.logo img{
+    margin: 1em 0 1em 3em;
+    width: 100px;
+    border-radius: 10%;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav{
+    margin-right: 3em;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 1em;
+}
+
+nav li a:hover{
+    color: var(--primary-color);
+}
+
+/***** Hero Styling *****/
+.hero{
+    background: url(../images/brewery.jpg);
+    /***** Photo Credit: Carlos Blanco, https://unsplash.com/photos/WzPdP9pn7go *****/
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero h1{
+    font-size: 4em;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0px 150px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/***** Vision Styling *****/
+.vision{
+    background-color: var(--secondary-color);
+    padding: 6em 0;
+}
+
+.vision h1{
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .8em 0;
+}
+
+.vision p{
+    font-size: 1.4em;
+    font-weight: 700;
+    line-break: 1.5;
+    padding: .5em 5em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/***** Connect Styling *****/
+.connect{
+    font-size: 2.5em;
+    margin: .2em;
+}
+
+.connect ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.connect li{
+    display: block;
+}
+
+.connect a{
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10%;
+    text-decoration: none;
+    margin: 0 .5em;
+}
+
+.connect a:hover{
+    background: transparent;
+}
+
+/***** Our Beer Grid Styling *****/
+.grid{
+    display: grid;
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-image: url(../images/stars.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-color);
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.grid header,
+.grid footer{
+  grid-column: span 16;
+}
+
+.grid footer{
+    font-size: 1em;
+    text-align: center;
+}
+
+.grid h1{
+    grid-column: span 16;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    padding: .8em 0 .6em 0;
+    text-shadow: 1px 1px var(--secondary-text-color);
+}
+
+.item-square{
+    margin: 1em;
+    position: relative;
+    grid-column-end: span 4;
+}
+
+.item-square img{
+    width: 100%;
+    display: block;
+    border: 2px solid var(--secondary-color);
+}
+  
+.item-identifier{
+    padding: 0.4em;
+    background: var(--secondary-color);
+    color: rgb(3, 27, 14);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.top-banner{
+    padding: 0.8em;
+    background: var(--secondary-color);
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.1;
+    text-shadow: 2px 1px var(--primary-text-color);
+}
+  
+.item-name{
+    font-size: 1.7em;
+}
+  
+.item-name-description{
+    display: block;
+    font-size: .7em;
+}
+  
+.price{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 0 0.2em;
+}
+  
+.price .large-digit{
+    grid-row: span 2;
+    font-size: 2.3em;
+    line-height: 1;
+    font-weight: 700;
+}
+  
+.price .superscript{
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+}
+  
+.price .subscript{
+    font-size: 0.9em;
+}
+
+/***** Contact Styling *****/
+.connect-container{
+    width: 100%;
+    padding: 2em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: stretch;
+}
+
+.connect-container main{
+  flex: 1;
+}
+
+.connect-container aside{
+  margin-left: 3em;
+  flex-basis: 33%;
+}
+
+.connect-container h1{
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    margin: .5em;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.connect-container p{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: .5em 1.5em;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    display: block;
+    margin: .3em 0;
+}
+  
+input{
+    font-size: 1.1em;
+    width: 100%;
+    padding: 1em;
+    color: var(--primary-text-color);
+    border: 1px solid var(--secondary-color);
+}
+
+textarea{
+    font-size: 1.1em;
+    color: var(--primary-text-color);
+    width: 100%;
+    height: 100px;
+    padding: 1em;
+    border: 1px solid var(--secondary-color);
+}
+
+input:focus,
+textarea:focus{
+    outline: 2px solid var(--secondary-color);
+}
+  
+.row{
+    display: flex;
+    margin: 1em;
+}
+  
+.group{
+    flex: 1;
+    margin: .5em;
+}
+
+.button{
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+    padding: 1em 1em;
+    margin: 0 1.5em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    border: 2px solid var(--secondary-text-color);
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: .08em;
+}
+
+.button:hover{
+  color: var(--secondary-text-color);
+  background: transparent;
+}
+
+#map{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 350px;
+    border: 1px solid var(--secondary-text-color);
+}
+
+
+.contact-connect-container{
+    background-color: var(--secondary-color);
+    
+}
+
+.contact-connect{
+    font-size: 2.5em;
+    margin: .2em;
+}
+
+.contact-connect ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-connect li{
+    display: block;
+}
+
+.contact-connect a{
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    text-decoration: none;
+    margin: 0 .5em;
+}
+
+.contact-connect a:hover{
+    background: transparent;
+    background-color: var(--primary-color);
+}
+
+
+/* ---- Images ----
+
+- Image used to design the logo is by Aldebaran S., https://unsplash.com/photos/g9Ek7TzdMVc
+
+- Image by Nasa, https://unsplash.com/photos/Yj1M5riCKk4
+
+- Image by Casey Horner, https://unsplash.com/photos/RmoWqDCqN2E
+
+- Image by Jeremy Thomas, https://unsplash.com/photos/E0AHdsENmDg
+
+- Image by Alexander Andrews, https://unsplash.com/photos/fsH1KjbdjE8
+
+- Image by NASA, https://unsplash.com/photos/rTZW4f02zY8
+
+- Image by NASA, https://unsplash.com/photos/-hI5dX2ObAs
+
+- Image by Aldebaran S., https://unsplash.com/photos/nRAOQdF4IM4
+
+- Image by Jeremy Perkins, https://unsplash.com/photos/uhjiu8FjnsQ
