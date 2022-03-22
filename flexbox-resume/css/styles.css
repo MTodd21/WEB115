@@ -1,0 +1,163 @@
+/***** Meyer Reset *****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/***** Main Styling *****/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+main{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/***** Profile Styling *****/
+.profile{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 300px;
+    flex-shrink: 0;
+} 
+  
+.profile h1{
+    font-size: 3em;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.profile p{
+    font-size: 1.2em;
+    padding: 10%;
+}
+  
+.profile img{
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+  
+.profile ul{
+    display: flex;
+    list-style-type: none;
+}
+  
+.profile li{
+    display: block;
+    font-size: 2.2em;
+    margin: .5em;
+}
+
+.profile a{
+    background-color: black;
+    color: lightgray;
+    border-radius: 10%;
+    width: 1.3em;
+    height: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.profile a:hover{
+    background-color: transparent;
+    color: black;  
+}
+
+/***** Resume Styling *****/
+.resume{
+    border-left: 2px dotted black;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2.5em;
+}
+
+.resume h2{
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.resume h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 1em;
+
+}
+
+#resume-ul{
+    padding-inline-start: 5%;
+    padding-bottom: 2em;
+}
+
+#resume-ul li{
+    font-size: 1.3em;
+    padding-bottom: .6em;
+}
+
+#resume-ul ul{
+    padding-inline-start: 3%;
+}
+
+.experience-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/***** Skills Styling *****/
+.skills-container{
+    display: flex;
+    margin: 0;
+}
+
+.skills-column{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#skills-ul{
+    padding-inline-start: 10%;
+}
+
+#skills-ul li{
+    font-size: 1.3em;
+    padding-bottom: .6em;
+}
+
+#skills-ul ul{
+    padding-inline-start: 3%;
+}
