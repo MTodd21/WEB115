@@ -1,0 +1,88 @@
+.grid{
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: $primary-color;
+    grid-template-columns: repeat(15, 1fr);
+    .item-square{
+        position: relative;
+        grid-column-end: span 3;
+    }
+    .item-tall-rectangle{
+        position: relative;
+        grid-column-end: span 3;
+        grid-row-end: span 2;
+    }
+    .item-long-rectangle{
+        position: relative;
+        grid-column-end: span 6;
+    }
+    .item-identifier{
+        padding: 0.4em;
+        background: $secondary-color;
+        color: rgb(3, 27, 14);
+        opacity: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .item-name{
+            font-size: 1.6em;
+        }
+        .item-name-description{
+            display: block;
+            font-size: .8em;
+        }
+    }
+    .item-square:hover .item-identifier,
+    .item-tall-rectangle:hover .item-identifier,
+    .item-long-rectangle:hover .item-identifier{
+        opacity: 1;
+    }
+}
+
+.grid h1{
+    grid-column: span 15;
+    color: $text-color;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .6em 0 .4em 0;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid $secondary-color;
+}
+  
+
+/***** Pictures 
+Palacio de Bellas Artes - David Carballar, https://unsplash.com/photos/FZU-vIW-lk8
+
+Xochimilco - Roberto Carlos Roman Don, https://unsplash.com/photos/_N6BAsuUqBc
+
+Catedral Metropolitana - Bhargava Marripati, https://unsplash.com/photos/7LDBKPWAHJ4
+
+Monumento a la Revolución - https://unsplash.com/photos/P155bH-Qy64
+
+Angel of Independence - Enrique Ortega Miranda, https://unsplash.com/photos/KtTDJsez5Xs
+
+Alameda Central - Alejandro Barba, https://unsplash.com/photos/gY9mSfk3kb8
+
+Museo Soumaya - mana5280, https://unsplash.com/photos/oTiEfmfOwEM
+
+Teotihuacan - Ruben Hanssen, https://unsplash.com/photos/OKlgGGanlwY
+
+Background Image - Annie Spratt, https://unsplash.com/photos/6a3nqQ1YwBw
+
+All food pictures are from my personal collection.
+
+*****/

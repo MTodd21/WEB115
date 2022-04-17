@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Project</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="../images/logo.png" alt="Matt's Travel Logo">
+        <menu>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="current" href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </menu>
+        <a href="../pages/blog.html#contact"><button>Contact</button></a>
+    </nav>
+
+
+    <main class="blog-page">
+        <div class="blog-grid">
+            <h1 class="title">Matt's Travel Blog</h1>
+
+            <div class="blog-image" id="grid-spot-1">
+                <img src="../images/palacio-de-bellas-artes.jpg" alt="Palacio de Bellas Artes">
+            </div>
+
+            <div class="blog-description" id="grid-spot-2">
+                <h2><a href="#">Mexico City - Destinations</a></h2>
+                <p>
+                    Discover destinations within Mexico City! Together we will travel through the city and I will be your tour guide while taking a journey through some of 
+                    the most iconic and historic areas of the city that make it an amazing place to visit.
+                </p>
+            </div>
+
+            <div class="blog-image" id="grid-spot-3">
+                <img src="../images/xochimilco.jpg" alt="Xochimilco">
+            </div>
+
+            <div class="blog-description" id="grid-spot-4">
+                <h2><a href="#">Mexico City - Outskirts</a></h2>
+                <p>
+                    Together we discover the city limits and outskirts of Mexico City. There are unique and amazing places that are just
+                    outside of the inner city that offer culture with a different taste of exploration. 
+                </p>
+            </div>
+            
+            <div class="blog-image" id="grid-spot-1">
+                <img src="../images/mezcal-infused-ice-cream.jpg" alt="Mezcal Infused Ice Cream">
+            </div>
+
+            <div class="blog-description" id="grid-spot-2">
+                <h2><a href="#">Mexico City - Food</a></h2>
+                <p>
+                    Every culture has its own unique food that defines it's origins. Come with me as we explore the food of Mexico City! We will
+                    explore restaurants, street vendors, and even bars while trying familiar and not-so-familiar foods and drinks.
+                </p>
+            </div>
+
+            <div class="form-message">
+                <h1>Drop me a message!</h1>
+                <p>Please share your thoughts about my blogs with me. You can also suggest where I should travel to next! I will take all
+                    locations that are suggested into consideration for my next place to travel and use them for future blog posts.
+                </p>
+            </div>
+
+            <form class="form-input" id="contact" action="/">
+                <div class="row">
+                    <div class="group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+
+                    <div class="group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <label>Message</label>
+                        <Textarea placeholder="Your Message"></Textarea>
+                    </div>
+                </div>
+                
+                <a class="button" href="#">Submit</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section class="social-media-icons">
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        &copy; Matt Todd 2022
+    </footer>
+    <script src="https://kit.fontawesome.com/c3b8548b23.js" crossorigin="anonymous"></script>
+</body>
+</html>

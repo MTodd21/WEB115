@@ -1,0 +1,268 @@
+@media only screen and (max-width: 500px){
+    nav{
+        font-size: .7em;
+        justify-content: space-evenly;
+        menu ul li{
+            border: 0px;
+        }
+    }
+
+    .home-page{
+        figcaption{
+            h1{
+                font-size: 2em;
+            }
+            h2{
+                font-size: 1.5em;
+            }
+            .hero-paragraph{
+                font-size: 1.2em;
+            }
+        }
+        .welcome{
+            padding: 1em 2em;
+        }
+    }
+
+    .blog-page{
+        .blog-grid{
+            grid-template-columns: repeat(4, 1fr);
+            .title{
+                grid-column-end: span 4;
+            }
+            .blog-image{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+            } 
+            .blog-description{
+                grid-column-end: span 4;
+                padding: 1em 0 3em 0;
+            }
+            .form-message{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+                padding: 0 0 1em 0;
+            }
+            .form-input{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+                padding: 1em;
+            }
+            .form-message{
+                h1{
+                    font-size: 2em;
+                }
+            }
+            form{
+                .row{
+                    margin: .1em;
+                }
+                .group{
+                    margin: 0 .5em 1em .5em;
+                }
+                label{
+                    margin: .1em;
+                }
+                input{
+                    font-size: 1em;
+                }
+                textarea{
+                    font-size: 1em;
+                }
+            
+                .button{
+                    font-size: 1.2em;
+                    padding: 10px 22px;
+                }
+            }
+        }
+    }
+
+    .gallery-page{
+        .grid{
+            padding: 0 2em;
+            grid-gap: 1em;
+            grid-template-columns: repeat(4, 1fr);
+            .item-square{
+                grid-column-start: 1;
+                grid-column-end: span 4;            }
+            .item-tall-rectangle{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+                grid-row-end: span 2;
+            }
+            .item-long-rectangle{
+                grid-column-start: 1;
+                grid-column-end: span 4;            }
+        }
+        .grid h1{
+            grid-column: span 4;
+            font-size: 2em;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 992px){
+    nav{
+        font-size: .8em;
+    }
+
+    .home-page{
+        figcaption{
+            h1{
+                font-size: 2.7em;
+            }
+            h2{
+                font-size: 2.2em;
+            }
+            .hero-paragraph{
+                font-size: 1.7em;
+            }
+        }
+        .welcome{
+            padding: 1em 6em;
+        } 
+    }
+
+    .blog-page{
+        .blog-grid{
+            grid-template-columns: repeat(8, 1fr);
+            .title{
+                grid-column-end: span 8;
+            }
+            .blog-image{
+                grid-column-start: 1;
+                grid-column-end: span 3;
+                padding: 0 0 1em 2em;
+            } 
+            .blog-description{
+                grid-column-end: span 5;
+                padding: 0 2em;
+            }
+            .form-message{
+                grid-column-start: 1;
+                grid-column-end: span 4;
+            }
+            .form-input{
+                grid-column-start: 5;
+                grid-column-end: span 4;
+                padding: 1em;
+            }
+            .form-message{
+                h1{
+                    font-size: 2.5em;
+                }
+            }
+            form{
+                .row{
+                    margin: .1em;
+                }
+                .group{
+                    margin: 0 .5em 1em .5em;
+                }
+                label{
+                    margin: .1em;
+                }
+                input{
+                    font-size: 1em;
+                }
+                textarea{
+                    font-size: 1em;
+                }
+            
+                .button{
+                    font-size: 1.2em;
+                    padding: 10px 22px;
+                }
+            }
+        }
+    }
+
+    .gallery-page{
+        .grid{
+            padding: 0 2em;
+            grid-gap: 1em;
+            grid-template-columns: repeat(9, 1fr);
+            .item-square{
+                grid-column-end: span 3;            }
+            .item-tall-rectangle{
+                grid-column-end: span 3;
+            }
+            .item-long-rectangle{
+                grid-column-end: span 3;            }
+        }
+        .grid h1{
+            grid-column: span 9;
+            font-size: 2.5em;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    .blog-page{
+        .blog-grid{
+            grid-template-columns: repeat(14, 1fr);
+            .title{
+                grid-column-end: span 14;
+            }
+            #grid-spot-1{
+                grid-column-start: 1;
+                grid-column-end: span 3;
+                padding: .5em 0;
+            } 
+            #grid-spot-2{
+                grid-column-start: 4;
+                grid-column-end: span 4;
+                padding: .5em;
+            }
+            #grid-spot-3{
+                grid-column-start: 8;
+                grid-column-end: span 3;
+                padding: .5em 0;
+            }
+            #grid-spot-4{
+                grid-column-start: 11;
+                grid-column-end: span 4;
+                padding: .5em;
+            }
+            .form-message{
+                grid-column-start: 1;
+                grid-column-end: span 7;
+            }
+            .form-input{
+                grid-column-start: 8;
+                grid-column-end: span 7;
+                padding: 1em;
+            }
+            .form-message{
+                h1{
+                    font-size: 3em;
+                }
+            }
+            form{
+                .row{
+                    margin: .1em;
+                }
+                .group{
+                    margin: 0 .5em 1em .5em;
+                }
+                label{
+                    margin: .1em;
+                }
+                input{
+                    font-size: 1em;
+                }
+                textarea{
+                    font-size: 1em;
+                }
+            
+                .button{
+                    font-size: 1.2em;
+                    padding: 10px 22px;
+                }
+            }
+        }
+    }
+}
