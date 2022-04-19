@@ -1,0 +1,211 @@
+//import partial
+@import 'css-reset';
+
+
+/***** Styling *****/
+section{
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/***** Menu 1 *****/
+.menu-1{
+  background: url(../images/menu-1-background.jpg) #5e99ae;
+  /** Image by Wesley Tingey, https://unsplash.com/photos/AZtMXheXnWc **/
+  height: 100px;
+}
+  
+.menu-1 li{
+  display: inline;
+  padding: 30px;
+}
+  
+.menu-1 a{
+  display: inline-block;
+  color: #FFFF8E;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.menu-1 a:hover{
+  border: 2px solid rgba(255, 255, 142, .5);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px #FFFF8E;
+}
+
+/***** Menu 2 *****/
+.menu-2{
+  background: url(../images/menu-2-background.jpg), #0c0c0e;
+  /** Image by Alex Quezada, https://unsplash.com/photos/erUNzsg9Pk4 **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.menu-2 ul{
+  display: block;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 10px dotted #faf551;
+}
+
+.menu-2 li{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-2 li:hover{
+  box-shadow: inset 0px 0px 15px #e01dcb;
+}
+
+.menu-2 li:hover a{
+  color: #ff1bac;
+  text-shadow: 1px 1px #5cdd45;
+  letter-spacing: 0.2em;
+}
+
+.menu-2 a{
+  color: rgb(105,233,247);
+  display: block;
+  padding: 20px;
+  letter-spacing: 0;
+  transition: letter-spacing 0.4s ease-in-out;
+}
+
+/***** Menu 3 *****/
+.menu-3{
+  background: url(../images/menu-3-background.jpg), black;
+  /** Image by Paul Volkmer, https://unsplash.com/photos/qVotvbsuM_c **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.menu-3 ul{
+  display: block;
+  width: 300px;
+  border: 4px solid #f2dc1d;
+}
+
+.menu-3 li{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-3 li:hover a{
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.menu-3 a{
+  color: #f2dc1d;
+  display: block;
+  height: 80px;
+  padding: 20px;
+  transition: letter-spacing 0.4s ease-in-out;
+}
+
+@keyframes flip-horizontal-bottom{
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
+}
+
+/***** Menu 4 *****/
+.menu-4{
+  background: url(../images/menu-4-background.jpg) #5e99ae;
+  /** Image by Eugene Golovesov, https://unsplash.com/photos/aZzG2ZVVM6Y **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-4 li{
+  display: inline;
+  padding: 20px;
+}
+
+.menu-4 a{
+  display: inline-block;
+  color: #FFFF8E;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.menu-4 a:hover{
+  border: 1px solid black;
+  animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tl{
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px -1px black, -2px -2px black, -3px -3px black, -4px -4px black, -5px -5px black, -6px -6px black, -7px -7px black, -8px -8px black;
+    transform: translateX(8px) translateY(8px);
+  }
+}
+
+/***** Menu 5 *****/
+.menu-5{
+  background: url(../images/menu-5-background.jpg) #5e99ae;
+  /** Image by Vincent Burkhead, https://unsplash.com/photos/LhlxYMfnTF0 **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-5 li{
+  display: block;
+  padding: 0px;
+}
+
+.menu-5 a{
+  width: 200px;
+  display: block;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: #f8f6f1;  
+}
+
+.menu-5 a:hover{
+  animation: rotate-scale-up-ver 0.65s linear both;
+}
+
+@keyframes rotate-scale-up-ver{
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(2) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
+}
