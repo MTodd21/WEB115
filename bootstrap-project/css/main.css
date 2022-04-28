@@ -1,0 +1,188 @@
+/***** Meyer Reset *****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/***** Main Styling *****/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 56px;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+#bg-color {
+  background-color: #e7db9c;
+}
+
+#font-color {
+  color: black;
+}
+
+#testimonial-box {
+  background-color: white;
+  padding: 2em;
+}
+
+#testimonial-box h2 {
+  font-size: 1.5em;
+}
+
+#hero-bg {
+  background: url(../images/hero.jpg);
+  /** Image by Patrick Fore, https://unsplash.com/photos/m9qWesqRN0M **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+}
+
+#bread {
+  background-image: url("../images/bread.jpg");
+  /** Image by Wesual Click, https://unsplash.com/photos/rsWZ-P9FbQ4 **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cake {
+  background-image: url("../images/cake.jpg");
+  /** Image by Slashio Photography, https://unsplash.com/photos/GKcoau1ESxg **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#pastry {
+  background-image: url("../images/pastry.jpg");
+  /** Image by Gaby Yerden, https://unsplash.com/photos/yE_jI4KApfc **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cutting-board {
+  background: url(../images/cutting-board.jpg);
+  /** Image by Ales Krivec, https://unsplash.com/photos/QnNqGoCnBg0 **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+#bakery {
+  background: url(../images/bakery.jpg);
+  /** Image by Herry Sutanto, https://unsplash.com/photos/SU4fLpg2zgw **/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+/** Carousel Styling **/
+.carousel {
+  position: relative;
+  margin: 2em auto;
+  width: 250px;
+  height: 250px;
+}
+
+.carousel.pointer-event {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+#carousel-sizer {
+  height: 250px;
+  width: 250px;
+}
+
+/** Nav Styling **/
+#nav-pill a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #e7db9c;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+#nav-pill a:hover {
+  border: 2px solid rgba(231, 219, 156, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 8px #e7db9c;
+          box-shadow: inset 0 0 8px #e7db9c;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 2px solid rgba(231, 219, 156, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 8px #e7db9c;
+          box-shadow: inset 0 0 8px #e7db9c;
+}
+
+/***** Images Not Already Listed 
+Macroon image by Oudi 44, https://unsplash.com/photos/HJdSyBk9vig
+
+Cinnabons image by Otto Norin, https://unsplash.com/photos/uG3Vu5TXKxE
+
+Tart image by Bruna Branco, https://unsplash.com/photos/FWaV69D5b8k
+
+Cheesecake image by Fallon Michael, https://unsplash.com/photos/Fde8e30pJL4
+
+
+
+
+*****/
+/*# sourceMappingURL=main.css.map */
