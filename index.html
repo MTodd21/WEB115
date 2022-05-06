@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../bootstrap-final-project/css/main.css">
+    <link rel="stylesheet" href="../bootstrap-final-project/scss/main.scss">
+    <title>M&M Bakery</title>
+  </head>  
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="40">
+
+    <nav id="navbar" class="navbar navbar-light bg-dark px-3 fs-5 sticky-top">
+      <a class="navbar-brand fs-2 ms-2" style="color: #e7db9c;" href="#home"><i class="fa-solid fa-wheat-awn"></i></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link" href="#product">Product</a>
+        </li>
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link" href="#catering">Catering</a>
+        </li>
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link nav-pills" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item" id="nav-pill">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+   
+    <section id="home">
+
+      <div class="px-4 py-5 text-center" id="hero-bg">
+        <h1 class="display-5 fw-bold" id="hero-title">M&M Bakery</h1>
+      </div>
+    </section>
+    
+    <section id="about" style="background-color: white;">
+
+      <div class="px-4 py-5 text-center">
+        <h1 class="display-5 fw-bold ">Bake the World a Better Place</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 fs-4">We are dedicated to offering a variety of artisan breads, cakes, and pastries made daily 
+              with locally-sourced ingredients.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-dark btn-lg px-4 gap-3 button-color">Order Now</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 button-color">Inquire Now</button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    <section id="product">
+
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 fs-1 text-center">Daily Specialties</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div id="bread" class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a href="#product" class="pt-3 pb-3 mt-5 mb-4 display-6 lh-1 fw-bold specialties-links">Artisan Breads</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+              <div id="cake" class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a href="#product" class="pt-3 pb-3 mt-5 mb-4 display-6 lh-1 fw-bold specialties-links">Contemporary Cakes</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+              <div id="pastry" class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <a href="#product" class="pt-3 pb-3 mt-5 mb-4 display-6 lh-1 fw-bold specialties-links">Traditional Pastry</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="catering">
+      
+      <div id="cutting-board"> 
+        <div class="container py-3">
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal fw-bold">Catering Packages</h1>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal fs-2">Breakfast Package</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title fs-4">$7.25<small class="text-muted fw-light">/per person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 fs-4">
+                    <li>Donuts</li>
+                    <li>Bagels</li>
+                    <li>Scones</li>
+                    <li>Danish</li>
+                    <li>Croissants</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-dark button-color">Contact for more options</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal fs-2">Desert Package</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title fs-4">$12.95<small class="text-muted fw-light">/per person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 fs-4">
+                    <li>Éclairs</li>
+                    <li>Cannoli</li>
+                    <li>Strudels</li>
+                    <li>Macaroons</li>
+                    <li>Profiteroles</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark button-color">Contact for more options</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-dark">
+                <div class="card-header py-3 text-white bg-dark border-dark">
+                  <h4 class="my-0 fw-normal fs-2">Weddings</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title fs-4">$24.95<small class="text-muted fw-light">/per person</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 fs-4">
+                    <li>Wedding Cake</li>
+                    <li>Petit fours</li>
+                    <li>Fruit Tarts</li>
+                    <li>Champagne Truffles</li>
+                    <li>Desert Package</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark button-color">Contact us to customize</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="gallery">
+
+        <div class="carousel slide" data-bs-ride="carousel">
+  
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
+              <img src="../bootstrap-project/images/bread.jpg" class="d-block" alt="Bread">
+            </div>
+  
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/cake.jpg" class="d-block" alt="Cake">
+            </div>
+  
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/pastry.jpg" class="d-block" alt="Pastry">
+            </div>
+
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/macaroons.jpg" class="d-block" alt="Macaroons">
+            </div>
+  
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/cinnabons.jpg" class="d-block" alt="Cinnabons">
+            </div>
+
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/tart.jpg" class="d-block" alt="Tarts">
+            </div>
+
+            <div class="carousel-item">
+              <img src="../bootstrap-project/images/cheesecake.jpg" class="d-block" alt="Cheese Cake">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div id="bakery">
+
+      <section id="testimonials" style="padding: 4em 0 0 0;">
+        <div class="container py-5 bg-light shadow">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-xl-8 text-center">
+              <h3 class="fs-1 mb-4">Customers Just Like You</h3>
+            </div>
+          </div>
+      
+          <div class="row text-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card testimonial-cards">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../bootstrap-project/images/person-1.jpg"
+                      class="rounded-circle" width="125" height="125"/>
+                  </div>
+                  <h5 class="font-weight-bold">Emily J.</h5>
+                  <p class="mb-2">
+                    Yummers! I found the ambiance to be very charming and I was happy to see how clean everything 
+                    was. This is definitely a spot I'll be frequenting for all of my bakery needs!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card testimonial-cards">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../bootstrap-project/images/person-2.jpg"
+                      class="rounded-circle" width="125" height="125"/>
+                  </div>
+                  <h5 class="font-weight-bold">Meagan S.</h5>
+
+                  <p class="mb-2">
+                    I stumbled on this undiscovered gem right in our neighborhood. These were some of the best 
+                    mouth-watering pastries I've had grace my taste buds in a long time. 5 stars!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-0">
+              <div class="card testimonial-cards">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../bootstrap-project/images/person-3.jpg"
+                      class="rounded-circle" width="125" height="125"/>
+                  </div>
+                  <h5 class="font-weight-bold">Ben R.</h5>
+
+                  <p class="mb-2">
+                    You can't go wrong with any of the huge selection of pastries, cakes, and breads. Everything is simply decadent and 
+                    nothing will disappoint. New customer for life!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+
+      <section id="contact" style="padding: 2em 0;">
+           
+        <div class="row my-lg-5 container-fluid">
+          <div class="col-10 col-md-9 col-lg-6 mx-auto">
+            <div class="card shadow border-0">
+              <div class="card-body p-lg-4">
+                <p class="mb-2 fs-1 text-center">Contact Us</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label fs-5">Name</label>
+                    <input type="text" class="form-control fs-5" id="name" placeholder="Your full name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fs-5">Email</label>
+                    <input type="email" class="form-control fs-5" id="email" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fs-5">Message</label>
+                    <textarea class="form-control fs-5" id="exampleFormControlTextarea1" rows="3" placeholder="Type message here"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark btn-lg d-block w-100 mt-4 fs-5 button-color">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <div class="py-3 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-4 my-4 mb-md-0 mt-lg-0 social-media-icons">
+            <h2 class="mb-3 fs-2">Where to Find Us</h2>
+            <ul class="fs-4">
+              <li class="fs-1"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+              <li class="fs-1"><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+              <li class="fs-1"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+              <li class="fs-1"><a href="#"><i class="fa-solid fa-square-phone"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-4 mb-md-0 mt-lg-0">
+            <h2 class="mb-3 fs-2">Directions</h2>
+            <div class="map-responsive" style="padding-left: 1em;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.90934453645!2d-88.37103738421429!3d42.
+              25910847919377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f6cf9426bf7c3%3A0x5efac1a225891902!2sMcHenry
+              %20County%20College!5e0!3m2!1sen!2sus!4v1646000496865!5m2!1sen!2sus" width="600" height="450" frameborder="0" 
+              style="border:0" allowfullscreen></iframe>></iframe>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-4 mb-md-0 mt-lg-0">
+            <h2 class="mb-3 fs-2">Credits</h2>
+            <ul class="credits fs-5">
+              <li class="mb-2">
+                Framework: 
+                <a href="https://www.getbootstrap.com">Bootstrap</a>
+              </li>
+              <li class="mb-2">
+                Photos: 
+                <a href="https://www.unsplash.com">Unsplash</a>
+              </li>
+              <li class="mb-2">
+                Icons: 
+                <a href="https://www.fontawesome.com">FontAwesome</a>
+              </li>
+              <li class="mb-2">
+                Fonts: 
+                <a href="https://fonts.google.com/">Google Fonts</a>
+              </li>
+              <li class="mb-2">
+                Map: 
+                <a href="https://www.google.com/maps">Google Maps</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer mt-auto py-2 bg-light">
+        <div class="container text-center">
+          <span class="text-muted">&copy; Matt Todd 2022</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c3b8548b23.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
